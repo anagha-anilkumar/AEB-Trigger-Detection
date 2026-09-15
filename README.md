@@ -1,12 +1,12 @@
- ## Project Overview
+1. Project Overview
 
 This project implements an Automatic Emergency Braking (AEB) trigger detection system using vehicle telemetry data.
 
 The program reads a CSV file containing:
 
-- `timestamp`
-- `speed`
-- `obstacle_distance`
+- timestamp
+- speed
+- obstacle_distance
 
 It calculates the Time To Collision (TTC) and determines whether emergency braking should be triggered.
 
@@ -15,7 +15,7 @@ According to the MOTOREX task requirement:
 > AEB is triggered when the Time To Collision (TTC) is less than 2 seconds.
 
 
-## 🎯 Objectives
+2. Objectives
 
 The program performs the following tasks:
 
@@ -29,11 +29,11 @@ The program performs the following tasks:
 
 
 
-## 📊 Input Data
+3. Input Data
 
 The input CSV file is:
 
-`vehicle_sensor_data.csv`
+vehicle_sensor_data.csv
 
 It contains the following columns:
 
@@ -47,9 +47,9 @@ The speed unit was confirmed by the MOTOREX organizers as **m/s**.
 
 
 
-## 🧮 Time To Collision (TTC)
+4. Time To Collision (TTC)
 
 The Time To Collision is calculated using:
 
-```text
+text
 TTC = obstacle_distance / speed
